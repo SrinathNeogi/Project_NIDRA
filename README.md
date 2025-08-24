@@ -29,20 +29,32 @@ It covers the full pipeline from **data collection → cleaning → EDA → mode
 
 ```
 Project_Nidra/
+│
 ├── Data/
-│ ├── Raw/
-│ └── Cleaned/
+│   ├── Raw/                # Original Kaggle dataset
+│   └── Cleaned/            # Cleaned dataset after preprocessing
+│
 ├── Models/
-│ ├── models.pkl
-│ └── scaler.pkl
+│   ├── DecisionTree_model.pkl
+│   ├── GradientBoosting_model.pkl
+│   ├── KNN_model.pkl
+│   ├── LinearRegression_model.pkl
+│   ├── RandomForest_model.pkl
+│   ├── SVR_model.pkl
+│   └── scaler.pkl
+│
 ├── Notebooks/
-│ ├── Data_Cleaning.ipynb
-│ ├── Model_Training.ipynb
-│ └── Prediction.ipynb
+│   ├── Data_Cleaning.ipynb
+│   ├── Data_Preprocessing.ipynb
+│   ├── Model_Training.ipynb
+│   └── Prediction.ipynb
+│
 ├── Streamlit/
-│ └── app.py
+│   └── app.py              # Streamlit app for user interaction
+│
 ├── requirements.txt
 └── README.md
+
 ```
 
 
