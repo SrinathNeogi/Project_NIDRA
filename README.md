@@ -1,68 +1,59 @@
-# Project NIDRA 💤
+# 💤 Project NIDRA  
 
-**NIDRA** is an end-to-end Machine Learning project that predicts a **Sleep Score** based on health, lifestyle, and sleep-related inputs.  
-It covers the full pipeline from **data collection** → **data cleaning** → **EDA** → **model training & evaluation** → **deployment as a Streamlit web app**.
+An end-to-end **Machine Learning & Streamlit** project that predicts a **Sleep Score** based on health, lifestyle, and sleep-related inputs.  
+It covers the full pipeline from **data collection → cleaning → EDA → model training → deployment**.
 
 ---
 
-## 📂 Project Structure
+## 📌 Overview
+- Collects and cleans a Kaggle sleep & lifestyle dataset  
+- Performs **EDA** to explore patterns between lifestyle and sleep quality  
+- Trains multiple ML models and builds an **Ensemble Voting Regressor**  
+- Deploys an interactive **Streamlit web app** for real-time prediction  
 
+---
+
+## 🚀 Features
+- ⚡ Handles missing values & scales features for better accuracy  
+- 🧠 Uses multiple ML models (Linear Regression, SVR, Decision Tree, KNN, Gradient Boosting, Random Forest)  
+- 🏆 Final prediction with **Ensemble Voting**  
+- 🌐 Streamlit interface for user input & prediction  
+- 📊 Categorizes Sleep Score into:  
+  - **< 6 → Poor Sleep Quality (Bad)**  
+  - **6 – 8 → Average to Good**  
+  - **≥ 8 → Good Sleep Quality**
+
+---
+
+## 🗂️ Project Structure
+
+```
 Project_Nidra/
-│
 ├── Data/
-│ ├── Raw/ # Original Kaggle dataset
-│ └── Cleaned/ # Cleaned dataset after preprocessing
-│
+│ ├── Raw/
+│ └── Cleaned/
 ├── Models/
-│ ├── models.pkl # Trained ensemble model
-│ └── scaler.pkl # Saved StandardScaler objects
-│
+│ ├── models.pkl
+│ └── scaler.pkl
 ├── Notebooks/
 │ ├── Data_Cleaning.ipynb
-│ ├── Data_Preprocessing.ipynb
 │ ├── Model_Training.ipynb
 │ └── Prediction.ipynb
-│
 ├── Streamlit/
-│ └── app.py # Streamlit app for user interaction
-│
+│ └── app.py
 ├── requirements.txt
 └── README.md
+```
 
 
 ---
 
-## 📊 Workflow
-
-1. **Data Collection**  
-   - Dataset collected from **Kaggle** (sleep & lifestyle dataset).  
-
-2. **Data Cleaning & Processing**  
-   - Handling missing values  
-   - Scaling numerical features using `StandardScaler`  
-   - Encoding categorical features  
-
-3. **Exploratory Data Analysis (EDA)**  
-   - Visualizing relationships between lifestyle factors and sleep quality  
-   - Identifying correlations & insights  
-
-4. **Model Training**  
-   - Tried multiple regression models:
-     - Linear Regression  
-     - Support Vector Regressor (SVR)  
-     - Decision Tree  
-     - K-Nearest Neighbors (KNN)  
-     - Gradient Boosting Regressor  
-     - Random Forest Regressor  
-   - Final model is an **Ensemble Voting Regressor**  
-
-5. **Deployment**  
-   - Built an interactive **Streamlit web app**  
-   - Users can enter lifestyle/health data → get a **Predicted Sleep Score**  
-   - Categorized into:
-     - **< 6** → Poor Sleep Quality (Bad)  
-     - **6 – 8** → Average to Good  
-     - **≥ 8** → Good Sleep Quality  
+## 🔎 Workflow
+1. **Data Collection** → Kaggle dataset (sleep & lifestyle data)  
+2. **Data Cleaning & Processing** → Missing value handling, scaling, encoding  
+3. **EDA** → Correlations, lifestyle vs sleep patterns visualization  
+4. **Model Training** → Multiple regressors, final Ensemble Voting Regressor  
+5. **Deployment** → Streamlit app for real-time Sleep Score prediction  
 
 ---
 
